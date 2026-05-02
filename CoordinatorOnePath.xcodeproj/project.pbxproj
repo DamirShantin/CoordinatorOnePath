@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3FD133DA2FA66F38006F55EE /* FactoryKit in Frameworks */ = {isa = PBXBuildFile; productRef = 3FD133D92FA66F38006F55EE /* FactoryKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		3FD1336E2FA66E90006F55EE /* CoordinatorOnePath.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorOnePath.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FD133DA2FA66F38006F55EE /* FactoryKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,7 @@
 			);
 			name = CoordinatorOnePath;
 			packageProductDependencies = (
+				3FD133D92FA66F38006F55EE /* FactoryKit */,
 			);
 			productName = CoordinatorOnePath;
 			productReference = 3FD1336E2FA66E90006F55EE /* CoordinatorOnePath.app */;
@@ -94,6 +100,9 @@
 			);
 			mainGroup = 3FD133652FA66E90006F55EE;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3FD133D82FA66F38006F55EE /* XCRemoteSwiftPackageReference "Factory" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3FD1336F2FA66E90006F55EE /* Products */;
 			projectDirPath = "";
@@ -332,6 +341,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3FD133D82FA66F38006F55EE /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3FD133D92FA66F38006F55EE /* FactoryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3FD133D82FA66F38006F55EE /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = FactoryKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3FD133662FA66E90006F55EE /* Project object */;
 }
