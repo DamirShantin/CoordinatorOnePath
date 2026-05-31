@@ -1,7 +1,15 @@
 
 import Foundation
 
-enum OnboardingRoute {
+enum Route: Hashable{
+//    case onBoarding(_ val: OnboardingRoute)
+    case home(_ val:HomeRoute)
+    case search(_ val:SearchRoute)
+    case profile(_ val:ProfileRoute)
+    case settings(_ val:SettingsRoute)
+}
+
+enum OnboardingRoute: Hashable {
     case page2
     case page3
 }
@@ -23,3 +31,4 @@ enum ProfileRoute: Hashable {
 enum SettingsRoute: Hashable {
     case about
 }
+

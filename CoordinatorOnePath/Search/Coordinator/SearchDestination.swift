@@ -2,8 +2,8 @@
 import SwiftUI
 
 extension View {
-    func searchDestinations() -> some View {
-        navigationDestination(for: SearchRoute.self) { route in
+    func searchDestinations(_ route: SearchRoute) -> some View {
+        Group {
             switch route {
             case .results: SearchResultsView()
             }

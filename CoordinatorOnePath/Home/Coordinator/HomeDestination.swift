@@ -2,12 +2,13 @@
 import SwiftUI
 
 extension View {
-    func homeDestinations() -> some View {
-        navigationDestination(for: HomeRoute.self) { route in
+    func homeDestinations(_ route: HomeRoute) -> some View {
+        Group{
             switch route {
             case .detail: HomeDetailView()
             case .item:   HomeItemView()
             }
         }
+        
     }
 }
