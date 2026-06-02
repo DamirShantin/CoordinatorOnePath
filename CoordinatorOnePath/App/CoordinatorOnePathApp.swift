@@ -1,6 +1,5 @@
 
 import SwiftUI
-import FactoryKit
 
 @main
 struct CoordinatorOnePathApp: App {

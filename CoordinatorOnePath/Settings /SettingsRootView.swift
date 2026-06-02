@@ -10,7 +10,7 @@ struct SettingsRootView: View {
             Text("SettingsRootView")
             TextField("Search", text: $text)
             Button("→ SettingsAbout")  { app.settings.showAbout() }
-            Button("→ ShowOnboarding") { app.resetOnboarding() }
+            Button("→ ShowOnboarding") { app.onboarding() }
             Button("→ Registration")   { app.registration() }
         }
     }

@@ -1,6 +1,5 @@
 
 import Foundation
-import FactoryKit
 
 enum WindowCase {
     case reg
@@ -16,7 +15,7 @@ final class AppCoordinator{
     
     init(){
         if UserDefaults.standard.value(forKey: "isRegistred") == nil  { UserDefaults.standard.set(false, forKey: "isRegistred") }
-        if UserDefaults.standard.value(forKey: "isOnboarding") == nil { UserDefaults.standard.set(false, forKey: "isOnboarding")}
+        if UserDefaults.standard.value(forKey: "isOnborded") == nil { UserDefaults.standard.set(false, forKey: "isOnborded")}
         
         self.isOnboarded = UserDefaults.standard.bool(forKey: "isOnborded")
         self.isRegistred = UserDefaults.standard.bool(forKey: "isRegistred")
@@ -39,13 +38,13 @@ final class AppCoordinator{
     //MARK: - Onboarding
     func showOnboarding(){
         self.selectedWindow = .onboarding
-        UserDefaults.standard.set(false, forKey: "isOnboarding")
+        UserDefaults.standard.set(false, forKey: "isOnborded")
         isOnboarded = false
     }
     
     func finishOnboarding(){
         self.selectedWindow = .main
-        UserDefaults.standard.set(true, forKey: "isOnboarding")
+        UserDefaults.standard.set(true, forKey: "isOnborded")
         isOnboarded = true
         checkWindowCase()
     }

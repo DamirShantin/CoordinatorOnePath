@@ -21,23 +21,11 @@ final class MainCoordinator {
         settings = SettingsCoordinator(app: self)
     }
     
-//    func finishOnboarding() {
-//        UserDefaults.standard.set(true, forKey: "isOnborded")
-//        isOnboarded = true
-//    }
-//    
-//    func resetOnboarding() {
-//        UserDefaults.standard.set(false, forKey: "isOnborded")
-//        onboarding = Container.shared.onboardingCoordinator()
-//        selectedTab = .home
-//        isOnboarded = false
-//    }
-    
     func push(_ route: MainRoute) { path.append(route) } 
     func pop()       { if !path.isEmpty { path.removeLast() } }
     func popToRoot() { path = NavigationPath() }
     
-    func resetOnboarding(){
+    func onboarding(){
         app?.showOnboarding()
     }
     func registration(){
