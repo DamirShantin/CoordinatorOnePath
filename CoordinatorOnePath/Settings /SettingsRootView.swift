@@ -9,8 +9,9 @@ struct SettingsRootView: View {
         VStack(spacing: 16) {
             Text("SettingsRootView")
             TextField("Search", text: $text)
-            Button("→ SettingsAbout") { app.settings.showAbout() }
-            Button("→ ShowOnboarding") {app.resetOnboarding()}
+            Button("→ SettingsAbout")  { app.settings.showAbout() }
+            Button("→ ShowOnboarding") { app.resetOnboarding() }
+            Button("→ Registration")   { app.registration() }
         }
     }
 }

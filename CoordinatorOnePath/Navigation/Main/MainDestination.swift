@@ -2,8 +2,8 @@
 import SwiftUI
 
 extension View {
-    func appNavigationDestinations() -> some View {
-        navigationDestination(for: Route.self) { route in
+    func mainNavigationDestinations() -> some View {
+        navigationDestination(for: MainRoute.self) { route in
             switch route {
             case .home(let val): homeDestinations(val)
             case .search(let val): searchDestinations(val)

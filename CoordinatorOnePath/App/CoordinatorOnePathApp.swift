@@ -4,10 +4,10 @@ import FactoryKit
 
 @main
 struct CoordinatorOnePathApp: App {
-    @State private var coordinator = Container.shared.mainCoordinator()
+    @State private var coordinator = AppCoordinator()
     var body: some Scene {
         WindowGroup {
-            RootView()
+            AppRootView()
                 .environment(coordinator)
         }
     }

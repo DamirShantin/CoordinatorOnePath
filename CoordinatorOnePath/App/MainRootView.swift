@@ -1,7 +1,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainRootView: View {
     @Environment(MainCoordinator.self) private var coordinator
     
     var body: some View {
@@ -9,7 +9,7 @@ struct ContentView: View {
         
         NavigationStack(path: $c.path) {
             CustomTabView(selectedTab: $c.selectedTab)
-                .appNavigationDestinations()
+                .mainNavigationDestinations()
         }
     }
 }
