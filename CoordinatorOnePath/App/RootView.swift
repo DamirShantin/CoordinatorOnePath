@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct RootView: View {
-    @Environment(AppCoordinator.self) private var coordinator
+    @Environment(MainCoordinator.self) private var coordinator
 
     var body: some View {
         if coordinator.isOnboarded {

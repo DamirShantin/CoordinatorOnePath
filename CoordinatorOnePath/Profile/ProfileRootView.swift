@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct ProfileRootView: View {
-    @Environment(AppCoordinator.self) private var app
+    @Environment(MainCoordinator.self) private var app
     var userId: String = ""
     
     var body: some View {

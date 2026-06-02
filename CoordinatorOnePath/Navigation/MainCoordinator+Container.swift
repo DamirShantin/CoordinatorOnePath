@@ -2,8 +2,8 @@
 import FactoryKit
 
 extension Container {
-    var appCoordinator: Factory<AppCoordinator> {
-        self { AppCoordinator() }.singleton
+    var mainCoordinator: Factory<MainCoordinator> {
+        self { MainCoordinator() }.singleton
     }
     
     var onboardingCoordinator: Factory<OnboardingCoordinator> {

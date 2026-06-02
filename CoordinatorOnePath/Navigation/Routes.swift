@@ -1,6 +1,12 @@
 
 import Foundation
 
+enum WindowCase {
+    case reg
+    case onboarding
+    case main
+}
+
 enum Route: Hashable{
 //    case onBoarding(_ val: OnboardingRoute)
     case home(_ val:HomeRoute)

@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct HomeRootView: View {
-    @Environment(AppCoordinator.self) private var app
+    @Environment(MainCoordinator.self) private var app
     @State private var text: String = ""
     
     var body: some View {
@@ -18,7 +18,7 @@ struct HomeRootView: View {
 }
 
 struct HomeDetailView: View {
-    @Environment(AppCoordinator.self) private var app
+    @Environment(MainCoordinator.self) private var app
     
     var body: some View {
         VStack(spacing: 16) {

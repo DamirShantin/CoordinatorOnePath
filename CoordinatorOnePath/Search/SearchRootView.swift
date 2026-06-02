@@ -2,7 +2,7 @@
 import SwiftUI
 
 struct SearchRootView: View {
-    @Environment(AppCoordinator.self) private var app
+    @Environment(MainCoordinator.self) private var app
     
     var body: some View {
         VStack(spacing: 16) {                                                      

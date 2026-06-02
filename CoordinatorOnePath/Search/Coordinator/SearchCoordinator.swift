@@ -2,8 +2,8 @@
 import SwiftUI
 
 final class SearchCoordinator {
-    private weak var app: AppCoordinator?
-    init(app: AppCoordinator) { self.app = app }
+    private weak var app: MainCoordinator?
+    init(app: MainCoordinator) { self.app = app }
     
     func showResults() { app?.push(Route.search(.results)) }
 }

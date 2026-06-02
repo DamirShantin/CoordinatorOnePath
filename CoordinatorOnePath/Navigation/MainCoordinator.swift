@@ -3,7 +3,7 @@ import SwiftUI
 import FactoryKit
 
 @Observable
-final class AppCoordinator {
+final class MainCoordinator {
     var path = NavigationPath()
     var selectedTab: Tab = .home
     var isOnboarded: Bool = UserDefaults.standard.bool(forKey: "isOnborded")

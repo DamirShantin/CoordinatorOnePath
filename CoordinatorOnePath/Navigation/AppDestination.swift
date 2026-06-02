@@ -11,11 +11,6 @@ extension View {
             case .settings(let val): settingsDestinations(val)
             }
         }
-        
-//        self
-//            .homeDestinations()
-//            .searchDestinations()
-//            .profileDestinations()
-//            .settingsDestinations()
+
     }
 }

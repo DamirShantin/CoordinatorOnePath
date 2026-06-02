@@ -10,9 +10,9 @@ struct CustomTabView: View {
     var body: some View {
         VStack(spacing: 0) {
             ZStack {
-                if visitedTabs.contains(.home)     { HomeRootView().id(tabId[.home]).opacity(selectedTab == .home     ? 1 : 0) }
-                if visitedTabs.contains(.search)   { SearchRootView().id(tabId[.search]).opacity(selectedTab == .search   ? 1 : 0) }
-                if visitedTabs.contains(.profile)  { ProfileRootView().id(tabId[.profile]).opacity(selectedTab == .profile  ? 1 : 0) }
+                if visitedTabs.contains(.home)     { HomeRootView().id(tabId[.home]).opacity(selectedTab == .home             ? 1 : 0) }
+                if visitedTabs.contains(.search)   { SearchRootView().id(tabId[.search]).opacity(selectedTab == .search       ? 1 : 0) }
+                if visitedTabs.contains(.profile)  { ProfileRootView().id(tabId[.profile]).opacity(selectedTab == .profile    ? 1 : 0) }
                 if visitedTabs.contains(.settings) { SettingsRootView().id(tabId[.settings]).opacity(selectedTab == .settings ? 1 : 0) }
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
